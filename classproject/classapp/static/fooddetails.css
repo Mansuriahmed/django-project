@@ -1,0 +1,62 @@
+body{
+    background-color: yellow;
+}
+nav{
+    background-color: black;
+    color: white ;
+    padding: 10px;
+}
+a{
+    color: white;
+}
+
+.a{
+    margin-left: 10px; 
+}
+.a:hover{
+    color: deepskyblue;
+}
+.b{
+    margin-left: 63%;
+}
+.login{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: chartreuse;
+    border:2px outset chartreuse;
+    color: white;
+}
+table{
+    margin-top: 10%;
+    
+    margin-left: 40%;
+    background-color: white;
+    border: none;
+    box-shadow: 5px 8px 12px black;
+    
+}
+tr{
+    text-align: center;
+}  
+th{
+    
+    font-size: 20px;
+}
+td{
+    padding-top: 5px;
+}
+th,td{
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.edit{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
+.delete{
+    background-color: red;
+    color: white;
+    border: none;
+}

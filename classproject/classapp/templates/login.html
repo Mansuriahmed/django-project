@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>My deilevery App</title>
+    <style>
+        body{
+            background-color: dodgerblue;
+        }
+        form{
+            margin-left:30% ;
+        }
+        table{
+            text-align: center;
+        }
+        h1{
+            margin-top: 10%;
+            text-align: center;
+        }
+        p{
+            margin-right: 10%;
+        }
+        button{
+            margin-left: 15%;
+        }
+        .d1{
+            border: 2px outset white;
+            width: 500px;
+            margin-left: 35%;
+            margin-top: 10%;
+            padding:10px;            
+            box-shadow: 4px 8px 16px black;
+            background-color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <h1>Login</h1>
+        <form method="POST">
+          <div>  
+            {% csrf_token %}
+            {%for i in login_form%}
+            <table>
+            <tr><td>{{i.label}}
+            {{i}}</td></tr>
+             </table>
+            {%endfor%}
+              <br>                  
+            <button class="btn btn-info" type="submit">login</button>
+        </form>
+        <p>Don't have an account? <a href="/register">Create an account</a>.</p>
+    </div>
+    
+</body>
+</html>

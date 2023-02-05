@@ -1,0 +1,53 @@
+body{
+    background-color: yellow;
+}
+nav{
+    background-color: black;
+    color: white ;
+    padding: 10px;
+}
+a{
+    color: white;
+}
+
+.a{
+    margin-left: 10px; 
+}
+.a:hover{
+    color: deepskyblue;
+}
+.b{
+    margin-left: 63%;
+}
+.login{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: chartreuse;
+    border:2px outset chartreuse;
+    color: white;
+}
+form{
+    margin-top: 10px;   
+    margin-left: 38%;
+    background-color: white;
+    border: none;
+    box-shadow: 5px 8px 12px black;
+    width:350px;
+    height: 200px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+p{
+    font-size: 25px;
+    color: black;
+    text-shadow: 4px 8px 12px black;
+    text-align: center;
+}
+.submit{
+    margin-left: 35%;
+    background-color: deepskyblue;
+    border: 2px solid deepskyblue;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+}
